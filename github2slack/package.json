@@ -1,0 +1,15 @@
+{
+  "name": "github2slack",
+  "version": "1.0.0",
+  "description": "Github webhook handler to post Slack with converting Github id to Slack id.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "toiroakr",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.45.0",
+    "slack-node": "^0.1.8"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "repositories": [
+    {
+      "token_id": "default",
+      "name": ".*",
+      "notification": "#notification",
+      "comment": "#pr_comment"
+    }
+  ],
+  "accounts": [
+    {
+      "github": "toiroakr",
+      "slack": "higuchi_akira"
+    }
+  ]
+}

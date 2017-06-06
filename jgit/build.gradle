@@ -1,0 +1,28 @@
+group 'com.toiroakr'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.16.16'
+    compile 'com.amazonaws:aws-lambda-java-core:1.1.0'
+    compile 'com.amazonaws:aws-lambda-java-log4j:1.0.0'
+    compile 'com.amazonaws:aws-java-sdk-kms:1.11.123'
+    compile 'org.eclipse.jgit:org.eclipse.jgit:4.7.0.201704051617-r'
+    testCompile 'junit:junit:4.12'
+}
+
+task buildZip(type: Zip) {
+    from compileJava
+    from processResources
+    into('lib') {
+        from configurations.runtime
+    }
+}
+
+build.dependsOn buildZip
