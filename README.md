@@ -3,5 +3,5 @@ GitHub上でのメンションをSlack上でのメンションに変換して通
 
 - [github2slack](github2slack)
 本体。
-- [jGit](jgit)
+- [jgit](jgit)
 Pull Requestをマージした際にマージ元のブランチを削除するLambda関数。([JGit](https://eclipse.org/jgit/)を使用)
